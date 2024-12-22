@@ -1,5 +1,5 @@
 import './App.css'
-import AppHeader from './AppHeader.jsx'
+import AppHeader from './AppHeader/AppHeader.jsx'
 
 function App() {
 	return (

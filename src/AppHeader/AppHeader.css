@@ -1,0 +1,43 @@
+.app-header {
+	width: 100%;
+	height: 17%;
+	background-color: #f44336;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.app-title {
+	color: white;	
+}
+
+.app-input-box {
+	margin-top: 10px;	
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.app-input-field {
+	padding: 10px;
+	font-size: 16px;
+	width: 70%;	
+	border: none;
+}
+
+.app-add-button {
+	width: 20%;
+	text-align: center;
+	padding: 10px;
+	background-color: #d9d9d9;
+	border-radius: 0;
+	cursor: pointer;
+	color: #555;
+	transition: 0.4s;
+}
+
+.app-add-button:hover {
+	background-color: #bbb;
+}
