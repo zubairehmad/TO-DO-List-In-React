@@ -1,13 +1,7 @@
-.app-header {
+body, html , #root {
 	width: 100%;
-	height: 30%;
-	background-color: red;
-	position: fixed;
-	inset: 0;
-}
-
-.app-title {
-	font-size: 30px;
-	text-align: center;
-	margin: 0;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
