@@ -10,10 +10,12 @@
 
 .app-title {
 	color: white;	
+	margin: 0px;
 }
 
 .app-input-box {
 	margin-top: 10px;	
+	margin-bottom: 15px;
 	display: flex;
 	width: 100%;
 	justify-content: center;
