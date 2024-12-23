@@ -10,6 +10,10 @@
 	background-color: #eee;
 	transition: 0.2s;
 	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 }
 
 #app-to-do-list li:hover {
@@ -18,4 +22,21 @@
 
 #app-to-do-list li:nth-child(odd) {
 	background-color: #f9f9f9;
+}
+
+.trailing-close {
+	font-size: 25px;
+	width: 8%;
+	height: 100%;
+	text-align: center;
+	right: 0;	
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.trailing-close:hover {
+	background-color: #f44336;
+	color: white;
 }
