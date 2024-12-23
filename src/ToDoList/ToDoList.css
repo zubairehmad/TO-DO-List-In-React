@@ -10,9 +10,6 @@
 	background-color: #eee;
 	transition: 0.2s;
 	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	position: relative;
 }
 
@@ -29,7 +26,8 @@
 	width: 8%;
 	height: 100%;
 	text-align: center;
-	right: 0;	
+	right: 0;
+	top: 0;
 	position: absolute;
 	display: flex;
 	align-items: center;
