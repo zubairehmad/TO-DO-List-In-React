@@ -13,10 +13,18 @@ function App() {
 		console.log("Item added : ", item)
 	}
 
+	const deleteItem = (index) => {
+		const updatedList = [
+			...toDoList.slice(0, index),
+			...toDoList.slice(index+1)
+		]
+		setToDoList(updatedList)
+	}
+
 	return (
 		<>
-			<AppHeader addToDoItem={addToDoItem}/>
-			<ToDoList toDoList={toDoList}/>
+			<AppHeader addToDoItem={addToDoItem} />
+			<ToDoList toDoList={toDoList} deleteItem={deleteItem} />
 		</>
 	)
 }
