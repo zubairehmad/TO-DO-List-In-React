@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import AppHeader from './AppHeader/AppHeader.jsx'
 import ToDoList from './ToDoList/ToDoList.jsx'
+import ToDo from './model/ToDo.js'
 
 function App() {
 
@@ -10,7 +11,6 @@ function App() {
 
 	const addToDoItem = (item) => {
 		setToDoList([...toDoList, item])	
-		console.log("Item added : ", item)
 	}
 
 	const deleteItem = (index) => {
@@ -21,10 +21,16 @@ function App() {
 		setToDoList(updatedList)
 	}
 
+	const toggleCompleted = (index) => {
+		const updatedList = [...toDoList]
+		updatedList[index].completed = !updatedList[index].completed
+		setToDoList(updatedList)
+	}
+
 	return (
 		<>
 			<AppHeader addToDoItem={addToDoItem} />
-			<ToDoList toDoList={toDoList} deleteItem={deleteItem} />
+			<ToDoList toDoList={toDoList} deleteItem={deleteItem} toggleCompleted={toggleCompleted} />
 		</>
 	)
 }
