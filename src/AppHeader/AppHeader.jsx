@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './AppHeader.css'
+import ToDo from '../model/ToDo.js'
 
 function AppHeader({ addToDoItem }) {
 
@@ -13,7 +14,7 @@ function AppHeader({ addToDoItem }) {
 		if (input.trim() === "") {
 			alert("You must write something")
 		} else {
-			addToDoItem(input)
+			addToDoItem(new ToDo(input))
 			setInput("")
 		}
 	}
