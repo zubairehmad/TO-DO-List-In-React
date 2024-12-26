@@ -23,3 +23,5 @@
     ```
   - The title of the page is by default `Vite + React` or similar and icon of webpage will be by default of vite.
   - To remove this, you can modify `index.html` file. Remove the icon tag and add some suitable title, that's it.
+- ## Sample Picture:
+  ![Screenshot from 2024-12-26 20-32-43](https://github.com/user-attachments/assets/a02a3865-4c69-4808-ae2f-d50f435e516f)
